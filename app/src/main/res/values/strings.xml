@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Moove</string>
+
+<!--    String bagian Signup dan Login-->
+    <string name="started">Let\'s get started</string>
+    <string name="create">Create an account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="signup">SIGN UP</string>
+    <string name="welcomeback">Welcome back!</string>
+    <string name="pakaiakun">Login pakai akunmu</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot">Lupa password?</string>
+
+</resources>
