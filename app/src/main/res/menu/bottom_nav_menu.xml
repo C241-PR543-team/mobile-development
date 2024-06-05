@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home_menu" />
+        <item
+            android:id="@+id/navigation_dashboard"
+            android:icon="@drawable/ic_listcheck"
+            android:title="@string/list_check" />
+        <item
+            android:id="@+id/navigation_notifications"
+            android:icon="@drawable/ic_add"
+            android:title="@string/tambah_plan" />
+
+        <item
+            android:id="@+id/navigation_budget"
+            android:icon="@drawable/ic_budget"
+            android:title="@string/budget" />
+
+        <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profile_user" />
+
+</menu>

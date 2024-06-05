@@ -13,5 +13,10 @@
     <string name="pakaiakun">Login pakai akunmu</string>
     <string name="login">LOGIN</string>
     <string name="forgot">Lupa password?</string>
+    <string name="home_menu">Home</string>
+    <string name="list_check">ListCheck</string>
+    <string name="tambah_plan">add</string>
+    <string name="budget">budget</string>
+    <string name="profile_user">profile</string>
 
 </resources>
