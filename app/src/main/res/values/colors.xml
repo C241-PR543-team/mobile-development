@@ -4,6 +4,13 @@
     <color name="white">#FFFFFFFF</color>
     <color name="navy">#124862</color>
     <color name="orange">#ED7D31</color>
-    <color name="blue_light">#30B1FF</color>
+    <color name="blue_light">#A7E6FF</color>
+    <color name="blue">#3572EF</color>
+    <color name="barn_red">#730000</color>
+    <color name="beige">#C7B7A3</color>
+    <color name="champagne_pink">#E2D4C9</color>
+    <color name="grey">#DDDDDD</color>
+    <color name="dark_grey">#222831</color>
+
 
 </resources>

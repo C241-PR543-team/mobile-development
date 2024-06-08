@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Moove</string>
 
-<!--    String bagian Signup dan Login-->
+    <!--    String bagian Signup dan Login-->
     <string name="started">Let\'s get started</string>
     <string name="create">Create an account</string>
     <string name="name">Name</string>
@@ -18,5 +18,24 @@
     <string name="tambah_plan">add</string>
     <string name="budget">budget</string>
     <string name="profile_user">profile</string>
+    <string name="register">REGISTER</string>
+
+
+    <!--    Heading-->
+    <string name="heading_1">SELAMAT DATANG</string>
+    <string name="heading_2">SELAMAT DATANG</string>
+    <string name="heading_3">SELAMAT DATANG</string>
+
+    <!--    Description-->
+    <string name="desc_1">Selamat datang di MOOVE! Siapkan liburan impian Anda dengan mudah dan nikmati perjalanan yang tak terlupakan bersama kami</string>
+    <string name="desc_2">Mulailah merencanakan petualangan Anda dengan MOOVE. Atur destinasi, jadwal, dan kegiatan dengan mudah untuk liburan yang sempurna.</string>
+    <string name="desc_3">Ayo, jelajahi destinasi populer di MOOVE! Temukan tempat-tempat menarik dan rencanakan liburan impian Anda sekarang.</string>
+
+    <!--    Button-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="back">Back</string>
+    <string name="e_mail">E mail</string>
+    <string name="tidakadaakun">Tidak memiliki akun?</string>
 
 </resources>

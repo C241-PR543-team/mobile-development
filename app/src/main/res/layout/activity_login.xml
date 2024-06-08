@@ -5,15 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/navy"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/ivLogo"
-        android:layout_width="148dp"
-        android:layout_height="148dp"
-        android:layout_marginTop="80dp"
-        android:src="@mipmap/ic_moove_placeholder"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,12 +24,11 @@
         android:id="@+id/tvStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/poppins"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/welcomeback"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivLogo" />
@@ -38,41 +39,71 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:text="@string/pakaiakun"
+        android:textColor="@color/black"
         android:textSize="12sp"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvStarted" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/e_mail"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="8dp"
         android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvCreateAccount" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Passowrd"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/ic_pass"
+        android:drawablePadding="8dp"
         android:fontFamily="@font/poppins"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="10dp"
+        android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,12 +113,13 @@
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@id/etPassword"
-        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        android:layout_marginTop="5dp"
         android:text="@string/forgot"
-        android:textColor="@color/white"
-        android:textSize="10sp"
-        android:layout_marginTop="5dp"/>
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="@id/etPassword"
+        app:layout_constraintTop_toBottomOf="@id/etPassword" />
 
     <Button
         android:id="@+id/signUpButton"
@@ -98,16 +130,39 @@
         android:layout_marginEnd="32dp"
         android:alpha="0"
         android:backgroundTint="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        android:shadowColor="@color/black"
         android:text="@string/login"
-        android:fontFamily="@font/poppins"
-        android:textStyle="bold"
+        android:textAlignment="center"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etPassword"
         tools:alpha="100" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/tidakadaakun"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
 
-
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginStart="8dp"
+        android:text="@string/signup"
+        android:textColor="@color/blue"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
