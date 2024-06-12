@@ -20,7 +20,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String","BASE_URL", "\"https://moove-c241-pr543.et.r.appspot.com/\n\"")
+        buildConfigField("String","BASE_URL", "\"https://moove-c241-pr543.et.r.appspot.com/\"")
     }
 
     buildTypes {
