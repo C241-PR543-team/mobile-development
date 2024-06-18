@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.moove.mooveapp.data.UserRepository
 import com.moove.mooveapp.di.Injection
 import com.moove.mooveapp.view.activity.LoginViewModel
+import com.moove.mooveapp.view.activity.SignupViewModel
 
 class ViewModelFactory(private val repository: UserRepository) : ViewModelProvider.NewInstanceFactory() {
 
@@ -14,6 +15,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
         return when {
             modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
                 LoginViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(SignupViewModel::class.java) -> {
+                SignupViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

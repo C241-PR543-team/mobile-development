@@ -12,7 +12,7 @@
         android:id="@+id/ivLogo"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="65dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +65,26 @@
         app:layout_constraintTop_toBottomOf="@id/tvCreateAccount" />
 
     <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etName" />
+
+    <EditText
         android:id="@+id/etDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,7 +102,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etName" />
+        app:layout_constraintTop_toBottomOf="@id/etPhone" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -148,7 +168,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:alpha="0"
         android:backgroundTint="@color/orange"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/signup"
@@ -172,7 +191,7 @@
         app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tvGotAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

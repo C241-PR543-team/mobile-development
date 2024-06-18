@@ -8,8 +8,6 @@ import retrofit2.http.Body
 import retrofit2.http.Headers
 import retrofit2.http.POST
 
-
-// TODO: TEST LOGIN API pakai ViewModel Repository?
 interface ApiService {
     @Headers("Content-Type: application/json")
     @POST("login")
@@ -17,5 +15,5 @@ interface ApiService {
 
     @Headers("Content-Type: application/json")
     @POST("register")
-    fun userRegister(@Body registerRequest: RegisterResponse): Call<RegisterResponse>
+    fun userRegister(@Body registerRequest: RequestBody): Call<RegisterResponse>
 }
