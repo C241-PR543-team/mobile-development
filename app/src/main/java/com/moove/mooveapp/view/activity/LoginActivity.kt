@@ -57,7 +57,6 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
                 else -> {
-                    // Handle any other status value
                     AlertDialog.Builder(this).apply {
                         setTitle("Oops")
                         setMessage("An unknown status value was received: ${response?.status}")

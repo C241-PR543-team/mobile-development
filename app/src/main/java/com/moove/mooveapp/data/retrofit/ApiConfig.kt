@@ -6,9 +6,6 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-
-// TODO: TEST LOGIN API pakai ViewModel Repository?
-
 class ApiConfig {
     companion object {
         fun getApiService(): ApiService {

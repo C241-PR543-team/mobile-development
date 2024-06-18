@@ -1,6 +1,7 @@
 package com.moove.mooveapp.data
 
 import com.moove.mooveapp.data.response.LoginResponse
+import com.moove.mooveapp.data.response.RegisterResponse
 import com.moove.mooveapp.data.retrofit.ApiService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -18,6 +19,14 @@ class UserRepository private constructor(
         val requestBody = rawJson.toRequestBody(jsonMediaType)
         return withContext(Dispatchers.IO) {
             apiService.userLogin(requestBody).awaitResponse()
+        }
+    }
+
+    suspend fun userRegister(rawJson: String): Response<RegisterResponse>? {
+        val jsonMediaType = "application/json; charset=utf-8".toMediaType()
+        val requestBody = rawJson.toRequestBody(jsonMediaType)
+        return withContext(Dispatchers.IO) {
+            apiService.userRegister(requestBody).awaitResponse()
         }
     }
 

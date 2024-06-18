@@ -19,6 +19,12 @@
     <string name="budget">budget</string>
     <string name="profile_user">profile</string>
     <string name="register">REGISTER</string>
+    <string name="name_user">Name</string>
+    <string name="email_user">Email</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="riwayat_perjalanan">Riwayat Perjalanan</string>
+    <string name="yyyy_mm_dd">yyyy-MM-dd</string>
+    <string name="phone_number">Phone Number</string>
 
 
     <!--    Heading-->
