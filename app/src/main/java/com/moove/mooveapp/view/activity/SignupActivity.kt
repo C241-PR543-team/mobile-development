@@ -30,7 +30,7 @@ class SignupActivity : AppCompatActivity() {
 
         signupAction()
 
-        binding.tvForgotPassword.setOnClickListener {
+        binding.tvGotAccount.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
