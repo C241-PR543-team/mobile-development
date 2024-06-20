@@ -10,15 +10,13 @@
         android:icon="@drawable/ic_listcheck"
         android:title="@string/list_check" />
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_create_plan"
         android:icon="@drawable/ic_add"
         android:title="@string/tambah_plan" />
-
     <item
         android:id="@+id/navigation_budget"
         android:icon="@drawable/ic_budget"
         android:title="@string/budget" />
-
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profile"
