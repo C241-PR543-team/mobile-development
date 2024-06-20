@@ -19,12 +19,6 @@
     <string name="budget">budget</string>
     <string name="profile_user">profile</string>
     <string name="register">REGISTER</string>
-    <string name="name_user">Name</string>
-    <string name="email_user">Email</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="riwayat_perjalanan">Riwayat Perjalanan</string>
-    <string name="yyyy_mm_dd">yyyy-MM-dd</string>
-    <string name="phone_number">Phone Number</string>
 
 
     <!--    Heading-->
@@ -44,6 +38,32 @@
     <string name="e_mail">E mail</string>
     <string name="tidakadaakun">Tidak memiliki akun?</string>
     <string name="sudah_memiliki_akun">Sudah memiliki akun?</string>
+    <string name="username">username</string>
+    <string name="edit_profile">edit profile</string>
+    <string name="riwayat_perjalanan">riwayat_perjalanan</string>
+    <string name="feedback">feedback</string>
+    <string name="rate">rate</string>
+    <string name="atur_perjalanan_baru">atur_perjalanan_baru</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="review">Review</string>
+    <string name="yyyy_mm_dd">yyyy_mm_dd</string>
+    <string name="bali">bali</string>
+    <string name="jawa_tengah">jawa_tengah</string>
+    <string name="lombok">lombok</string>
+    <string name="tana_toraja">tana_toraja</string>
+    <string name="phone_number">phone_number</string>
+    <string name="destinasi_populer">Destinasi Populer</string>
+    <string name="trip">Trip</string>
+    <string name="kota_1">Bali</string>
+
+    <!--    Create Page-->
+    <string name="Title_create_page">Buat Rencana Perjalanan</string>
+    <string name="judul_trip">Judul Trip</string>
+    <string name="welcme">Welcome,\n%1$s!</string>
+    <string name="greetings">Mulailah perjalananmu sekarang!</string>
+    <string name="trip_to_bali">Trip to bali</string>
+    <string name="review_user">Review User</string>
+
 
     <!--    Home-->
     <string name="kota">Kota</string>
