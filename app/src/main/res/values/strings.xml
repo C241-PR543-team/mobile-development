@@ -65,4 +65,13 @@
     <string name="review_user">Review User</string>
 
 
+    <!--    Home-->
+    <string name="kota">Kota</string>
+    <string name="judul_review">Trip</string>
+    <string name="desc_review">desc_review</string>
+    <string name="welcome">Welcome,\n%1$s!</string>
+    <string name="greetings">Rencanakan liburannmu!</string>
+    <string name="destinasi_populer">Destinasi Populer</string>
+    <string name="review">Review</string>
+
 </resources>

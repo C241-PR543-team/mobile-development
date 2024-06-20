@@ -25,7 +25,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="@string/kota_1"
+            android:text="@string/kota"
             android:textColor="@color/white"
             android:textSize="13sp" />
 

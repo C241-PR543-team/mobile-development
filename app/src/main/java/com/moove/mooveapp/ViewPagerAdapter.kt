@@ -5,11 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.viewpager.widget.PagerAdapter
+import androidx.recyclerview.widget.RecyclerView
 
-class ViewPagerAdapter(private val context: Context) : PagerAdapter() {
+class ViewPagerAdapter(private val context: Context) : RecyclerView.Adapter<ViewPagerAdapter.ViewHolder>() {
 
     private val images = intArrayOf(
         R.drawable.intro_1,
@@ -29,33 +28,24 @@ class ViewPagerAdapter(private val context: Context) : PagerAdapter() {
         R.string.desc_3,
     )
 
-    override fun getCount(): Int {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(context).inflate(R.layout.slider_layout, parent, false)
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.slideTitleImage.setImageResource(images[position])
+        holder.slideHeading.setText(headings[position])
+        holder.slideDescription.setText(descriptions[position])
+    }
+
+    override fun getItemCount(): Int {
         return headings.size
     }
 
-    override fun isViewFromObject(view: View, `object`: Any): Boolean {
-        return view == `object` as LinearLayout
-    }
-
-    override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        val layoutInflater =
-            context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val view = layoutInflater.inflate(R.layout.slider_layout, container, false)
-
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val slideTitleImage: ImageView = view.findViewById(R.id.titleImage)
         val slideHeading: TextView = view.findViewById(R.id.texttitle)
         val slideDescription: TextView = view.findViewById(R.id.textdesc)
-
-        slideTitleImage.setImageResource(images[position])
-        slideHeading.setText(headings[position])
-        slideDescription.setText(descriptions[position])
-
-        container.addView(view)
-
-        return view
-    }
-
-    override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
-        container.removeView(`object` as View)
     }
 }

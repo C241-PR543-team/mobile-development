@@ -29,7 +29,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="@string/welcme"
+                android:text="@string/welcome"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
@@ -52,7 +52,7 @@
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/plain_bg"
+                android:background="@drawable/bg_trip"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="8dp"
                 android:hint="Cari Destinasi"
@@ -153,10 +153,10 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:background="@color/white"
         app:itemBackground="@android:color/transparent"
-        app:itemIconSize="28dp"
+        app:itemIconSize="30dp"
         app:itemIconTint="@drawable/item_selector"
         app:itemRippleColor="@null"
         app:labelVisibilityMode="unlabeled"

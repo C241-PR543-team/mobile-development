@@ -3,12 +3,14 @@ package com.moove.mooveapp
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.moove.mooveapp.databinding.ActivityIntroBinding
 
 class IntroActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityIntroBinding
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
