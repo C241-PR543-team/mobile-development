@@ -10,7 +10,7 @@
         android:icon="@drawable/ic_listcheck"
         android:title="@string/list_check" />
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_add_plan"
         android:icon="@drawable/ic_add"
         android:title="@string/tambah_plan" />
 

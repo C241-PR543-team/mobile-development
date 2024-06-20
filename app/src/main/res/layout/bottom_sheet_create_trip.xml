@@ -39,7 +39,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/plain_bg"
+        android:background="@drawable/bg_trip"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center_vertical"
         android:hint="Tulis judul trip"
