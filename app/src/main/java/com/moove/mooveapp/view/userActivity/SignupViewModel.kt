@@ -1,4 +1,4 @@
-package com.moove.mooveapp.view.activity
+package com.moove.mooveapp.view.userActivity
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
