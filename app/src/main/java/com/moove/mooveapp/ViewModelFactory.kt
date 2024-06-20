@@ -5,8 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.moove.mooveapp.data.UserRepository
 import com.moove.mooveapp.di.Injection
-import com.moove.mooveapp.view.activity.LoginViewModel
-import com.moove.mooveapp.view.activity.SignupViewModel
+import com.moove.mooveapp.view.userActivity.LoginViewModel
+import com.moove.mooveapp.view.userActivity.SignupViewModel
 
 class ViewModelFactory(private val repository: UserRepository) : ViewModelProvider.NewInstanceFactory() {
 

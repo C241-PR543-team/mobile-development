@@ -1,4 +1,4 @@
-package com.moove.mooveapp.view.activity
+package com.moove.mooveapp.view.userActivity
 
 import android.app.DatePickerDialog
 import android.content.Intent

@@ -1,11 +1,13 @@
-package com.moove.mooveapp.view.activity
+package com.moove.mooveapp.view.userActivity
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.moove.mooveapp.MainActivity
 import com.moove.mooveapp.ViewModelFactory
 import com.moove.mooveapp.data.request.LoginRequest
 import com.moove.mooveapp.databinding.ActivityLoginBinding
@@ -33,7 +35,12 @@ class LoginActivity : AppCompatActivity() {
                     AlertDialog.Builder(this).apply {
                         setTitle("Yey!")
                         setMessage("Login berhasil.")
-                        setPositiveButton("OK") { _, _ -> }
+                        setPositiveButton("OK") { _, _ ->
+                            Intent(this@LoginActivity, MainActivity::class.java).also {
+                                startActivity(it)
+                                finish()
+                            }
+                        }
                         create()
                         show()
                     }

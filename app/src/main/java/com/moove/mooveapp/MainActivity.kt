@@ -10,13 +10,23 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SearchView
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.moove.mooveapp.data.UserRepository
+import com.moove.mooveapp.data.pref.UserPreference
+import com.moove.mooveapp.data.pref.dataStore
+import com.moove.mooveapp.data.retrofit.ApiConfig
+import com.moove.mooveapp.data.retrofit.ApiService
 import com.moove.mooveapp.databinding.ActivityMainBinding
 import com.moove.mooveapp.view.adapter.ReviewUserAdapter
 import com.moove.mooveapp.view.home.destinasi.DestinasiPopulerAdapter
 import com.moove.mooveapp.view.home.destinasi.DestinasiPopulerItem
 import com.moove.mooveapp.view.home.review.ReviewUserItem
+import com.moove.mooveapp.view.userActivity.LoginActivity
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,16 +42,12 @@ class MainActivity : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
-//        if (!isLoggedIn()) {
-//            // User is not logged in, redirect to LoginActivity
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
-//            finish()
-//            return
-//        }
+        isLoggedIn()
 
-        val username = getUsernameFromPreferences()
-        displayWelcomeMessage(username)
+        lifecycleScope.launch {
+            val username = getUsernameFromPreferences()
+            displayWelcomeMessage(username)
+        }
 
         setupBottomNavigation()
         setupDestinasiPopulerRecyclerView()
@@ -82,15 +88,28 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    private fun isLoggedIn(): Boolean {
-//        // Cek apakah pengguna sudah login, misalnya dengan mengecek token di SharedPreferences
-//        val sharedPreferences = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
-//        return sharedPreferences.getString("username", null) != null
-//    }
+    private fun isLoggedIn() {
+        val apiConfig = ApiConfig()
+        val apiService = apiConfig.getApiService(this, "")
+        val repository = UserRepository.getInstance(apiService, UserPreference.getInstance(dataStore))
+
+        val user = runBlocking { repository.getSession().first() }
+
+        if (user?.token.isNullOrEmpty()) {
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+            return
+        }
+    }
 
     private fun getUsernameFromPreferences(): String {
-        val sharedPreferences = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
-        return sharedPreferences.getString("username", "User") ?: "User"
+        val apiConfig = ApiConfig()
+        val apiService = apiConfig.getApiService(this, "")
+        val repository = UserRepository.getInstance(apiService, UserPreference.getInstance(dataStore))
+
+        val user = runBlocking { repository.getSession().first() }
+
+        return user.name ?: "User"
     }
 
     private fun displayWelcomeMessage(username: String) {
