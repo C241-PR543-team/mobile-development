@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
     <Button
-        android:id="@+id/btnSavePlan"
+        android:id="@+id/btnlogout"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
