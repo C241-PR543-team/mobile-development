@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Rencanakan liburan impianmu!"
+            android:text="@string/pembuka"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -39,7 +39,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Pilih Tanggal"
+            android:text="@string/pilih_tanggal"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -63,7 +63,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Pilih Kota Tujuan"
+            android:text="@string/kotatujuan"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -75,7 +75,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
-            android:hint="Nama Kota"
+            android:hint="@string/nama_kota"
             android:padding="16dp" />
 
         <TextView
@@ -85,7 +85,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Pilih Kategori"
+            android:text="@string/pilih_kategori"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -97,7 +97,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
-            android:hint="Rating Alam (0-5)"
+            android:hint="@string/alam"
             android:inputType="numberDecimal"
             android:padding="16dp" />
 
@@ -109,7 +109,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
-            android:hint="Rating Belanja (0-5)"
+            android:hint="@string/belanja"
             android:inputType="numberDecimal"
             android:padding="16dp" />
 
@@ -121,7 +121,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
-            android:hint="Rating Budaya (0-5)"
+            android:hint="@string/budaya"
             android:inputType="numberDecimal"
             android:padding="16dp" />
 
@@ -133,7 +133,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
-            android:hint="Rating Keluarga (0-5)"
+            android:hint="@string/keluarga"
             android:inputType="numberDecimal"
             android:padding="16dp" />
 
@@ -145,7 +145,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
-            android:hint="Rating Relaksasi (0-5)"
+            android:hint="@string/relaksasi"
             android:inputType="numberDecimal"
             android:padding="16dp" />
 
@@ -157,7 +157,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
-            android:hint="Rating Sejarah (0-5)"
+            android:hint="@string/sejarah"
             android:inputType="numberDecimal"
             android:padding="16dp" />
 
@@ -168,7 +168,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Berapa hari liburanmu?"
+            android:text="@string/lama_liburan"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -180,7 +180,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
-            android:hint="Jumlah Hari"
+            android:hint="@string/banyak_hari"
             android:padding="16dp" />
 
         <TextView
@@ -190,7 +190,7 @@
             android:layout_marginTop="24dp"
             android:padding="16dp"
             android:layout_gravity="center_horizontal"
-            android:text="Rekomendasi Tempat akan Muncul di Sini"
+            android:text="@string/rekomendasi_tempat_akan_muncul_di_sini"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
