@@ -181,15 +181,16 @@
             android:layout_marginEnd="32dp"
             android:background="@drawable/bg_trip"
             android:hint="@string/banyak_hari"
+            android:inputType="numberDecimal"
             android:padding="16dp" />
 
         <TextView
             android:id="@+id/textViewRecommendations"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="24dp"
             android:padding="16dp"
-            android:layout_gravity="center_horizontal"
             android:text="@string/rekomendasi_tempat_akan_muncul_di_sini"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
