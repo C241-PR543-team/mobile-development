@@ -19,7 +19,7 @@
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".CreateActivity"
+            android:name=".view.createPlan.CreateActivity"
             android:exported="false" />
         <activity
             android:name=".view.userActivity.SignupActivity"
