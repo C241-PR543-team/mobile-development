@@ -6,17 +6,9 @@
         android:icon="@drawable/ic_home"
         android:title="@string/home_menu" />
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_listcheck"
-        android:title="@string/list_check" />
-    <item
         android:id="@+id/navigation_add_plan"
         android:icon="@drawable/ic_add"
         android:title="@string/tambah_plan" />
-    <item
-        android:id="@+id/navigation_budget"
-        android:icon="@drawable/ic_budget"
-        android:title="@string/budget" />
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profile"

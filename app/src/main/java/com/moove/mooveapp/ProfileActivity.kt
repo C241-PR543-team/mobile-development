@@ -1,4 +1,4 @@
-package com.example.yourapp
+package com.moove.mooveapp
 
 import android.content.Intent
 import android.content.SharedPreferences

@@ -70,5 +70,9 @@
     <string name="greetings">Rencanakan liburannmu!</string>
     <string name="destinasi_populer">Destinasi Populer</string>
     <string name="review">Review</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="buat">Buat</string>
+    <string name="logout">LOGOUT</string>
+    <string name="simpan">Simpan</string>
 
 </resources>
