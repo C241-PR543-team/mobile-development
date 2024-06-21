@@ -4,49 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateActivity">
+    tools:context=".view.createPlan.CreateActivity">
 
     <TextView
         android:id="@+id/tvJudulTrip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Judul Trip"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/judul_trip"
+        android:textColor="@color/black"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"
-        android:textSize="18sp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvStartDate"
+        android:id="@+id/tvpembuka"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Rencanakan liburan impianmu!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudulTrip" />
+
+    <TextView
+        android:id="@+id/tvPilihTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_regular"
         android:text="Start Date"
-        app:layout_constraintTop_toBottomOf="@id/tvJudulTrip"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"
-        android:textSize="18sp" />
+        app:layout_constraintTop_toBottomOf="@+id/tvpembuka" />
 
     <TextView
-        android:id="@+id/tvEndDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="End Date"
-        app:layout_constraintTop_toBottomOf="@id/tvStartDate"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_date"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"
-        android:textSize="18sp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPilihTanggal" />
 
     <Button
         android:id="@+id/btnSavePlan"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Submit"
+        android:text="@string/simpan"
+        android:background="@drawable/bg"
+        app:backgroundTint="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvEndDate" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
