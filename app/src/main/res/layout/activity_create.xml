@@ -1,77 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.createPlan.CreateActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvJudulTrip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="@string/judul_trip"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvpembuka"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Rencanakan liburan impianmu!"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvJudulTrip" />
-
-    <TextView
-        android:id="@+id/tvPilihTanggal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Start Date"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvpembuka" />
-
-    <TextView
-        android:id="@+id/tvDate"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/bg"
-        android:padding="10dp"
-        android:drawableStart="@drawable/ic_date"
-        android:drawablePadding="10dp"
-        android:gravity="center_vertical"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPilihTanggal" />
-
-    <Button
-        android:id="@+id/btnSavePlan"
-        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/simpan"
-        android:background="@drawable/bg"
-        app:backgroundTint="@color/orange"
-        android:fontFamily="@font/poppins_bold"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+        android:orientation="vertical"
+        tools:context=".view.createPlan.CreateActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvJudulTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/judul_trip"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tvpembuka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/pembuka"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPilihTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/pilih_tanggal"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg"
+            android:drawableStart="@drawable/ic_date"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPilihKota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/kotatujuan"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_trip"
+            android:hint="@string/nama_kota"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/pilih_kategori"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextNature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_trip"
+            android:hint="@string/alam"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextShopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_trip"
+            android:hint="@string/belanja"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextCulture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_trip"
+            android:hint="@string/budaya"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_trip"
+            android:hint="@string/keluarga"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextRelaxation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_trip"
+            android:hint="@string/relaksasi"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editTextHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_trip"
+            android:hint="@string/sejarah"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/tvjumlahhari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/lama_liburan"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/bg_trip"
+            android:hint="@string/banyak_hari"
+            android:inputType="numberDecimal"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/textViewRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:text="@string/rekomendasi_tempat_akan_muncul_di_sini"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btnSavePlan"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/bg"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/simpan"
+            android:textSize="18sp"
+            app:backgroundTint="@color/orange" />
+
+    </LinearLayout>
+
+</ScrollView>

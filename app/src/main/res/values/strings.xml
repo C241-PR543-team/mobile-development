@@ -60,6 +60,20 @@
     <string name="welcme">Welcome,\n%1$s!</string>
     <string name="trip_to_bali">Trip to bali</string>
     <string name="review_user">Review User</string>
+    <string name="pembuka">Rencanakan liburan impianmu!</string>
+    <string name="kotatujuan">Pilih Kota Tujuan</string>
+    <string name="nama_kota">Nama Kota</string>
+    <string name="pilih_kategori">Pilih Kategori</string>
+    <string name="alam">Rating Alam (0-5)</string>
+    <string name="belanja">Rating Belanja (0-5)</string>
+    <string name="budaya">Rating Budaya (0-5)</string>
+    <string name="keluarga">Rating Keluarga (0-5)</string>
+    <string name="relaksasi">Rating Relaksasi (0-5)</string>
+    <string name="sejarah">Rating Sejarah (0-5)</string>
+    <string name="lama_liburan">Berapa hari liburanmu?</string>
+    <string name="banyak_hari">Jumlah Hari</string>
+    <string name="rekomendasi_tempat_akan_muncul_di_sini">Rekomendasi Tempat akan Muncul di Sini</string>
+
 
 
     <!--    Home-->
